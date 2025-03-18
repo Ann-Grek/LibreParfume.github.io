@@ -57,13 +57,26 @@ document.addEventListener("DOMContentLoaded", function(){
 
         let navbox = document.querySelector("nav");
         let y = window.scrollY;
-        
-        if (y < dy && y > 60) {
+        if (y > 60) {
             if (!navbox.classList.contains("topfixed"))
-            navbox.classList.add("topfixed");
+            {
+                navbox.classList.add("topfixed");
+                document.querySelector("#logopng").src = "svg/YSL_logo_large_white.svg";
+                document.querySelector("#liked").src = "svg/liked_white.svg";
+                document.querySelector("#purchase").src = "svg/purchase_white.svg";
+                document.querySelector("#profile").src = "svg/profile_white.svg";
+
+            }                
+            
         } else {
             if (navbox.classList.contains("topfixed"))
+            {
                 navbox.classList.remove("topfixed");
+                document.querySelector("#logopng").src = "svg/YSL_logo_large.svg";
+                document.querySelector("#liked").src = "svg/liked.svg";
+                document.querySelector("#purchase").src = "svg/purchase.svg";
+                document.querySelector("#profile").src = "svg/profile.svg";
+            }
         }
         dy = y;
       });

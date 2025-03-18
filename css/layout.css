@@ -5,7 +5,7 @@
 /*      wrapper#top |                               */
 /*                  header.container > .inside      */
 /*                  section#s1.container > .inside  */
-/*                  section#s1.container > .inside  */
+/*                  section#s2.container > .inside  */
 /*                  ***                             */
 /*                  footer.container > .inside      */
 
@@ -13,17 +13,15 @@
 /* Початок блоку змінних проєкту */
 :root {
     --bg-color-1:  #fff;  /* Колір фону 1 */
-    --bg-color-2:  #ccc;  /* Колір фону 2 */
     --bg-nav-1:    #333;  /* Колір фону навігаційної панелі 1 */
     --bg-nav-2:    #111;  /* Колір фону навігаційної панелі 2 (наприклад після прокрутки) */
     --lnk-color-1: #333;  /* Загальний колір покликань 1 */
-    --lnk-color-2: #333;  /* Загальний колір покликань 2 (hover) */
+    --lnk-color-2: #FFF6C2;  /* Загальний колір покликань 2 (hover) */
     --txt-color-1: #333;  /* Колір тексту 1 */
-    --txt-color-2: #333;  /* Колір тексту 2 */
     --nav-color-1: #444;  /* Колір головного меню 1 */
-    --nav-color-2: #111;  /* Колір головного меню 2 (hover) */
+    --nav-color-2: #FFF6C2;  /* Колір головного меню 2 (hover) */
     --nav-color-3: #ccc;  /* Колір головного меню 3 після прокрутки */
-    --nav-color-4: #fff;  /* Колір головного меню 4 (hover) після прокрутки */
+    --nav-color-4: #FFF6C2;  /* Колір головного меню 4 (hover) після прокрутки */
     --max-width:   1280px;  /* Максимальна ширина секцій */
     --mob-padding: 20px;    /* Горизонтальні внутрішні відступи актуальні для смартфонів */
     --ver-padding: 50px;    /* Вертикальні внутрішні відступи у секціях */
@@ -34,10 +32,26 @@
     --brg-color-1: #fff;  /* Колір бургера 1 */
     --brg-color-2: #eee;  /* Колір бургера 2 (hover) */
     --brg-color-3: #eee;  /* Колір бургера 3 (close) */
-    --logo-width:   160px;  /* Ширина лого */
+    --logo-width:   304px;  /* Ширина лого */
     --logo-color-1: #fff; /* Основний колір тексту лого */
     --logo-color-2: #ccc; /* Другий колір тексту лого напр. (hover) */
-}
+
+     /* Розміри */
+    --base-font-size: 1rem;
+    --h1-size: 3rem;
+    --h2-size: 2.25rem;
+    --nav-link-size: 0.875rem;
+    --max-width: 1280px;
+    --mob-padding: 1.25rem;
+    --ver-padding: 3rem;
+    
+     /* Відступи */
+    --space-unit: 1rem;
+    --space-xs: calc(var(--space-unit) * 0.5);
+    --space-sm: var(--space-unit);
+    --space-md: calc(var(--space-unit) * 1.5);
+    }
+
 /* Кінець блоку змінних проєкту */
 
 .wrapper {

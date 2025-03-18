@@ -1,4 +1,5 @@
 nav {
+    
     /* background: var(--bg-nav-1); */
     background: transparent; /* Колір фону навігаційної панелі 1 */
     background-repeat: no-repeat;
@@ -9,19 +10,21 @@ nav {
 }
 
 nav.topfixed {
+    transition: all 0.3s ease;
     background: var(--bg-nav-1);
     position: fixed;
 }
 
-/* nav::before {
+ nav::before {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     transform: translateY(-100%);
-    transition: transform .1s ease;
-} */
+    transition: all 0.3s ease;
+
+} 
 
 nav.topfixed::before {
     transform: none;
@@ -35,8 +38,8 @@ nav.topfixed::before {
     margin-right: auto;                 /* Центрування блоку всередині nav по-горизонталі */
     max-width: var(--max-width);        /* Ширина .nav-inside не більше 1280px */
     padding: var(--mob-padding);        /* Внутрішні відступи */
+    height: 100px;
     position: relative;
-    transition: all .3s ease-in-out;
 }
 
 .topfixed .navbar {
@@ -47,8 +50,8 @@ nav.topfixed::before {
     /* background-color: rgba(10,10,10,.5); */
     /* background-blend-mode: multiply; */
     /* background-size: cover; */
-    padding-top: 12px;      /* Внутрішні відступи після прокрутки */
-    padding-bottom: 12px;   /* Внутрішні відступи після прокрутки */
+    /*padding-top: 12px;      /* Внутрішні відступи після прокрутки */
+    /*padding-bottom: 12px;   /* Внутрішні відступи після прокрутки */
 }
 
 .logo {
@@ -58,24 +61,23 @@ nav.topfixed::before {
     transform: scale(1);
     transform-origin: left center;
     align-items: center;    /* Вирівнювання по додатковій осі */
-    transition: all .3s ease-in-out;
     text-decoration: none;
 }
 
 .logo img {
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
+    height: 50%;
 }
 
 .logo:hover {
     text-decoration: none;
 }
 
-.topfixed .logo {
+/* .topfixed .logo {
     transform: scale(.8);
     opacity: 1;
     display: flex;
-}
+} */
 
 .logo img {
     margin-right: 15px;
@@ -87,7 +89,6 @@ nav.topfixed::before {
     line-height: 1.4;
     letter-spacing: .035em;
     font-weight: 600;
-    text-transform: uppercase;
     max-width: 80px;
 }
 
@@ -107,10 +108,8 @@ nav .navbar {
     font-weight: 600;           /* Накреслення тексту меню */
     letter-spacing: .025em;
     padding: 8px 0 18px;
-    margin-left: 32px;
     text-decoration: none;
     position: relative;
-    transition: all .3s ease;
 }
 
 .navigation a:hover {
@@ -133,9 +132,14 @@ nav .navbar {
 
 .navigation li {
     display: inline-block;
-    vertical-align: middle;
-}
+    padding-top: 15px;
+    margin-right: 20px;
 
+}
+.navigation li img{
+    width: 55px;
+    height: 45px;
+}
 a:hover, a:focus, a:active {
     text-decoration: none;
 }
