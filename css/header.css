@@ -1,0 +1,44 @@
+.cols {
+    display: flex;
+    justify-content: center; /* align for main axis */
+    align-items: center;    /* align for cross axis */
+    gap: 32px;
+}
+
+/* temporary for development*/
+
+.col {
+    background-color: #ccc;
+    min-height: 100px;
+}
+
+/* end of temporary for development*/
+
+.col.c1 {
+    width: 25%;
+    padding-right: 30px;
+}
+
+.col.c2 {
+    width: 25%;
+}
+
+.col.c3 {
+    width: 25%;
+    padding-left: 30px;
+}
+
+@media screen and (max-width:767px) {
+    .cols { 
+        gap: 0;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .col.c1,
+    .col.c2,
+    .col.c3 {
+        width: 100%;
+    }
+}
