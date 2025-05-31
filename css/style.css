@@ -1,8 +1,10 @@
 /* style.css — Загальні властивості елементів */
 
 html, body {
+    overflow-x:hidden;
     font-family: 'Frank Ruhl Libre';  /* Гарнітура для основного тексту */
-    font-size: 24px;        /* Розмір шрифта основного тексту */
+    font-size: 20px;        /* Розмір шрифта основного тексту */
+    font-weight: 100;  
     line-height: 1.4;       /* Міжрядковий інтервал основного тексту в %/100 */
     letter-spacing: .002em; /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
     scroll-behavior: smooth;/* Плавна прокрутка під час переходу за якорем (ancor) */
@@ -10,7 +12,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Be Vietnam Pro';  /* Гарнітура для заголовків */
-    font-weight: 400;                       /* Накреслення для заголовків */
+    font-weight: 600;                       /* Накреслення для заголовків */
     line-height: 1.2;                       /* Міжрядковий інтервал для заголовків в %/100 */
     letter-spacing: 0.005em;                /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
     margin: 0 0 .5em;                       /* Відступ знизу після заголовку */
@@ -18,11 +20,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 3.5rem; }     /* Висота заголовків у відносних величинах */
-h2 { font-size: 1.5rem; }   /* rem - відносний розмір *(body font-size) */
+h2 { font-size: 2rem; }   /* rem - відносний розмір *(body font-size) */
 h3 { font-size: 1.35rem; }
 
 p {
-    margin-bottom: .75em;   /* Відступ знизу після абзацу */
+    margin-bottom: .60em;   /* Відступ знизу після абзацу */
+    max-width: 700px;
+}
+
+.center p,
+.center h1, .center h2, .center h3,
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mg-bottom {
+    margin-bottom: 50px ;
 }
 
 a {

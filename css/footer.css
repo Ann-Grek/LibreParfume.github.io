@@ -1,0 +1,78 @@
+.footer.container {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    min-height: 0;
+}
+
+/* .inside {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.footer .inside {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+  padding: 0px 56px;
+}
+.footer .inside .footer-contact-us {
+    text-align: right;
+}
+
+.footer .inside .footer-contact-us p {
+    font-size: 18px;
+}
+.footer-sign-up h2 {
+  margin-bottom: 8px;
+}
+.signUp-form {
+  display: flex;
+  flex-direction: column;
+}
+.signUp-form label {
+  margin-top: 12px;
+}
+.signUp-form input {
+color: var(--gray-color);
+padding: 4px 4px;
+max-height: 48px;
+max-width: 300px;
+width: 100%;
+box-sizing: border-box;
+border-color: var(--white-color);
+height: 100%;
+background-color: var(--black-color);
+}
+
+#showPassword {  
+}
+
+.showPassword-class {
+  max-width: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+}
+
+.signUp-form button[type = "submit"] {
+  max-width: 150px;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: var(--black-color);
+  border-color: var(--white-color);
+  color: var(--white-color);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.signUp-form button[type = "submit"]:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-color: var(--black-color);
+  font-weight: bold;
+  transition: all 0.2s;
+}

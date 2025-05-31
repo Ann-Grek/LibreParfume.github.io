@@ -2,6 +2,7 @@ nav {
     
     /* background: var(--bg-nav-1); */
     background: transparent; /* Колір фону навігаційної панелі 1 */
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
@@ -34,9 +35,9 @@ nav.topfixed::before {
     display: flex;
     justify-content: space-between;     /* Схема вирівнювання лого та меню (desktop) по основній осі (main axis) */
     align-items: center;                /* Схема вирівнювання лого та меню (desktop) по додатковій осі (cross axis) */
-    margin-left: auto;                  /* Центрування блоку всередині nav по-горизонталі */
-    margin-right: auto;                 /* Центрування блоку всередині nav по-горизонталі */
-    max-width: var(--max-width);        /* Ширина .nav-inside не більше 1280px */
+    margin-left: 50px;                  /* Центрування блоку всередині nav по-горизонталі */
+    margin-right: 50px;                 /* Центрування блоку всередині nav по-горизонталі */
+    /* max-width: var(--max-width);        Ширина .nav-inside не більше 1280px */
     padding: var(--mob-padding);        /* Внутрішні відступи */
     height: 100px;
     position: relative;
@@ -65,7 +66,7 @@ nav.topfixed::before {
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 85%;
     height: 50%;
 }
 

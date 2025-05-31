@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSL Libre Parfume</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/burger.css">
-    <link rel="stylesheet" href="css/header.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/s1.css">
+    <link rel="stylesheet" href="css/s2.css">
+    <link rel="stylesheet" href="css/s3.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/s4.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body id="top">
     <!-- Navigation section -->
@@ -27,74 +35,287 @@
                     <span></span>
                 </button>
                 <ul class="level_1">
-                    <li><a class="nav-link" href="#top"><img  id = "liked" src = "svg/liked.svg"></a></li>
-                    <li><a class="nav-link" href="#s1"><img id = "purchase" src  = "svg/purchase.svg"></a></li>
-                    <li><a class="nav-link" href="#s2"><img id = "profile" src   = "svg/profile.svg"></a></li>
+                    <li><a class="nav-link" href="#s3"><img  id = "liked" src = "svg/liked.svg"></a></li>
+                    <li><a class="nav-link" href="#s4"><img id = "purchase" src  = "svg/purchase.svg"></a></li>
+                    <li><a class="nav-link" href="#footer"><img id = "profile" src   = "svg/profile.svg"></a></li>
                 </ul>
            </div>
        </div>
     </nav>
     <!-- END of Navigation section -->
 
+    <!-- Section #general_info -->
+    <section id="s1" class="container v-header">
+        <div class="inside fullscreen-video-wrap">
+            <video src="img/video-libre.MP4" autoplay="true" muted="true" loop="true">
+                <!-- <source src="img/libre_gif.mp4" type="video/mp4"> -->
+              <!-- </video>  -->
+              <!-- <div class="center mg-bottom">
+                <p> 
+                    The freedom to live everything with excess.
+                    The perfume of a strong. bold and free woman experimenting her freedom extremely.
+                </p>
+            </div> -->
+        </div>
+     </section>
+
     <!-- C O N T N E N T   W R A P P E R -->
     <div class="wrapper"> <!-- Загальний контейнер -->
-        <!-- Section #general_info -->
-        <section id="s1" class="container">
-            <div class="inside">
-                <video width="100%" height="100%" autoplay muted loop>
-                    <source src="/img/libre_gif.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video> 
-                  <div style="padding-left: var(--mob-padding); padding-right: var(--mob-padding); text-align: center;">
-                    <p>
-                        The freedom to live everything with excess. </p>
-                        <p>
-                        The perfume of a strong. bold and free woman experimenting her freedom extremely.
-                    </p>
-                </div>
-            </div>
-
-        </section>
-
         <!-- Section product -->
         <section id="s2" class="container">
-            <div class="inside" style="text-align: center;">
-                <div style="text-align: center;">
-                    <h2 style="text-align: center;">DISCOVER THE LIBRE COLLECTION</h2>
-                    <img src="img/banner.jpg" style="width: 100%; height: 100%">
+            <div class="inside">
+                <div class="center mg-bottom">
+                    <p> 
+                        The freedom to live everything with excess. The perfume of a strong. bold and free woman experimenting her freedom extremely.
+                    </p>
                 </div>
-                <div style="margin-bottom: 50px; margin-top: 20px;">
-                    <h2 style="text-align: center;">ORANGE BLOSSOM FROM MOROCCO </h2>
-                    <p>Grown in Morocco, this uniquely noble orange blossom was fashioned </p>
-                    <p>by Master Perfumer Carlos Benaïm for a warm sensual and feminine note. </p>
+                <div class="center mg-bottom">
+                    <h2>DISCOVER THE LIBRE COLLECTION</h2>
+                   <img src="img/banner.jpg" style="width: 100%; height: 100%">
                 </div>
-                <div>
-                    <h2 style="text-align: center;">DIVA LAVENDER HEART FROM FRANCE </h2>
-                    <p>A fresher and more vibrant floral expression of the essence, </p>
-                    <p>exclusively crafted for Yves Saint Laurent and sustainably sourced</p>
+                <div class="center mg-bottom">
+                    <h2>ORANGE BLOSSOM FROM MOROCCO </h2>
+                    <p>Grown in Morocco, this uniquely noble orange blossom was fashioned by Master Perfumer Carlos Benaïm for a warm sensual and feminine note. </p>
                 </div>
-
+                <div class="center mg-bottom">
+                    <h2>DIVA LAVENDER HEART FROM FRANCE </h2>
+                    <p>A fresher and more vibrant floral expression of the essence, exclusively crafted for Yves Saint Laurent and sustainably sourced</p>
+                </div>
             </div>
         </section>
 
         <!-- Section collection -->
         <section id="s3" class="container">
-             <div class="inside">
-            </div>
-        </section>
+            <div class="inside">
+                <div id="swiper-01" class="swiper-container slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <div class="row">
+                                <div class="col s3-img">
+                                    <img src="img/libre_large1.1.png" alt="">
+                                </div>
+                                <div class="col s3-aroma">
+                                    <button data-value="whiteFlowers">White flowers</button>
+                                    <button data-value="citrus">Citrus</button>
+                                    <button data-value="lavender">Lavender</button>
+                                    <button data-value="vanilla">Vanilla</button>
+                                    <button data-value="sweet">Sweet</button>
+                                    <button data-value="musk">Musk</button>
+                                </div>
+                                <div class="col s3-text">
+                                    <h2>LIBRE EAU DE PARFUM <br>$165.00 </h2>
+                                    <p>A floral fragrance with lander, orange blossom,<br> musk accord & vanilla.</p>
+                                    <div class = "s3-buttons-ml">
+                                        <button>50ml</button>
+                                        <button>90ml</button>
+                                    </div>
+                                    <div class = "s3-buttons-count">
+                                        <button class = "button-count-minus">-</button>
+                                        <button class = "button-count-count">1</button>
+                                        <button class = "button-count-plus">+</button>
+                                    </div>
+                                    <div class = "s3-buttons-add">
+                                        <button>ADD TO BAG</button>
+                                        <a class="serce"><img src="svg/liked.svg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item">
+                            <div class="row">
+                                <div class=" col s3-img">
+                                    <img src="img/libre_large2.1.png" alt="">
+                                </div>
+                                <div class="col s3-aroma">
+                                  <button data-value="vanilla">Vanilla</button>
+                                    <button data-value="whiteFlowers">White flowers</button>
+                                    <button data-value="lavender">Lavender</button>
+                                    <button data-value="citrus">Citrus</button>
+                                    <button data-value="sweet">Sweet</button>
+                                    <button data-value="ambergris">Ambergris</button>
+                                </div>
+                                <div class="col s3-text">
+                                    <h2>LIBRE INTENSE  <br>$170.00 </h2>
+                                    <p> A vanilla perfume with lavender essence,<br> orange blossom & orchid accord.</p>
+                                    <div class = "s3-buttons-ml">
+                                        <button>50ml</button>
+                                        <button>90ml</button>
+                                    </div>
+                                    <div class = "s3-buttons-count">
+                                        <button class = "button-count-minus">-</button>
+                                        <button class = "button-count-count">1</button>
+                                        <button class = "button-count-plus">+</button>
+                                    </div>
+                                    <div class = "s3-buttons-add">
+                                        <button>ADD TO BAG</button>
+                                        <a class="serce"><img src="svg/liked.svg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item">
+                            <div class="row">
+                                <div class=" col s3-img">
+                                    <img src="img/libre_large3.1.png" alt="">
+                                </div>
+                                <div class="col s3-aroma">
+                                    <button data-value="whiteFlowers">White flowers</button>
+                                    <button data-value="honey">Honey</button>
+                                    <button data-value="lavender">Lavender</button>
+                                    <button data-value="vanilla">Vanilla</button>
+                                    <button data-value="ambergris">Ambergris</button>
+                                    <button data-value="warmSpice">Warm Spice</button>
+                                </div>
+                                <div class="col s3-text">
+                                    <h2>LIBRE LE PARFUM <br>$190.00 </h2>
+                                    <p> A floral fragrance with lavender,<br> orange blossom and saffron accord.</p>
+                                    <div class = "s3-buttons-ml">
+                                        <button>50ml</button>
+                                        <button>90ml</button>
+                                    </div>
+                                    <div class = "s3-buttons-count">
+                                        <button class = "button-count-minus">-</button>
+                                        <button class = "button-count-count">1</button>
+                                        <button class = "button-count-plus">+</button>
+                                    </div>
+                                    <div class = "s3-buttons-add">
+                                        <button>ADD TO BAG</button>
+                                        <a class="serce"><img src="svg/liked.svg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide item">
+                            <div class="row">
+                                <div class=" col s3-img">
+                                    <img src="img/libre_large4.1.png" alt="">
+                                </div>
+                                <div class="col s3-aroma">
+                                    <button data-value="whiteFlowers">White flowers</button>
+                                    <button data-value="lavender">Lavender</button>
+                                    <button data-value="citrus">Citrus</button>
+                                    <button data-value="floral">Floral</button>
+                                    <button data-value="sweet">Sweet</button>
+                                    <button data-value="fresh">Fresh</button>
+                                </div>
+                                <div class="col s3-text">
+                                    <h2>LIBRE EAU DE TOILETTE <br>$145.00 </h2>
+                                    <p> A floral fragrance with lavander essence,<br> orange blossom and white tea accord.</p>
+                                    <div class = "s3-buttons-ml">
+                                        <button>50ml</button>
+                                        <button>90ml</button>
+                                    </div>
+                                    <div class = "s3-buttons-count">
+                                        <button class = "button-count-minus">-</button>
+                                        <button class = "button-count-count">1</button>
+                                        <button class = "button-count-plus">+</button>
+                                    </div>
+                                    <div class = "s3-buttons-add">
+                                        <button>ADD TO BAG</button>
+                                        <a class="serce"><img src="svg/liked.svg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>    
+                </div>
+           </div>
+       </section>
+
+        <!-- Section collection -->
+        <section id="s4" class="container">
+            <div class="inside">
+               <h2>CHOOSE YOUR PRODUCT</h2> 
+                <div class="row">
+                    <div class="col">
+                        <img src="img/libre_small1.2.png" alt="">
+                        <img src="img/korok.png" alt="" class="korok">
+                        <h3>LIBRE</h3>
+                        <p>Eua de parfum</p>
+                        <a class="button" href="#">SHOP NOW</a>
+                    </div>
+                    <div class="col">
+                        <img src="img/libre_small2.2.png" alt="">
+                        <img src="img/korok.png" alt="" class="korok">
+                        <h3>LIBRE</h3>
+                        <p>Parfum intense</p>
+                        <a class="button" href="#">SHOP NOW</a>
+                    </div>
+                    <div class="col">
+                        <img src="img/libre_small3.2.png" alt="">
+                        <img src="img/korok.png" alt="" class="korok">
+                        <h3>LIBRE</h3>
+                        <p>Le parfum</p>
+                        <a class="button" href="#">SHOP NOW</a>
+                    </div>
+                    <div class="col">
+                        <img src="img/libre_small4.2.png" alt="">
+                        <img src="img/korok.png" alt="" class="korok">
+                        <h3>LIBRE</h3>
+                        <p>Eua de toilette</p>
+                        <a class="button" href="#">SHOP NOW</a>
+                    </div>
+                </div>
+           </div>
+       </section>
 
         <!-- Start of the Footer section -->
-        <footer class="container">
-            <div class="inside">
-            </div>
-        </footer>
+       
         <!-- END of the Footer section -->
 
-    </div>
+
     <!-- E N D   O F   C O N T N E N T   W R A P P E R -->
+
+    <footer section id="footer" class="container footer">
+        <div class="inside">
+            <div class="col footer-sign-up">
+              <h2>SIGN UP</h2>
+                <form method="post" class = "signUp-form">
+                    <label for="userEmail">
+                      Your email
+                    </label>
+                    <input 
+                    id="userEmail" 
+                    class = "footer-form-email" 
+                    type="email"
+                    placeholder="Your email"
+                    > 
+                    <label for="userPassword">
+                      Password
+                    </label>
+                    <input
+                    id = "userPassword"
+                    class = "footer-form-password"
+                    type = "password"
+                    placeholder="Password"
+                    >
+                    <label for="showPassword" class = "showPassword-class">
+                      SHOW
+                      <input type="checkbox" id = "showPassword">
+                    </label>
+                    <button type = "submit">
+                      SUBMIT
+                    </button>
+                </form>
+            </div>
+            <div class="col footer-contact-us"> 
+                <h2>CONTACT US</h2>
+                <p>Call 1.866.725.6791<br> 10 am to 7 pm EST Mon - Fri<br> or email us</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts in project -->
     <script src="js/nav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-init.js"></script>
 
     <!-- End of Scripts in project -->
 </body>

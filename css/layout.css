@@ -13,7 +13,7 @@
 /* Початок блоку змінних проєкту */
 :root {
     --bg-color-1:  #fff;  /* Колір фону 1 */
-    --bg-nav-1:    #333;  /* Колір фону навігаційної панелі 1 */
+    --bg-nav-1:    #000000;  /* Колір фону навігаційної панелі 1 */
     --bg-nav-2:    #111;  /* Колір фону навігаційної панелі 2 (наприклад після прокрутки) */
     --lnk-color-1: #333;  /* Загальний колір покликань 1 */
     --lnk-color-2: #FFF6C2;  /* Загальний колір покликань 2 (hover) */
@@ -35,6 +35,31 @@
     --logo-width:   304px;  /* Ширина лого */
     --logo-color-1: #fff; /* Основний колір тексту лого */
     --logo-color-2: #ccc; /* Другий колір тексту лого напр. (hover) */
+
+    /* основні кольори */
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #838383;
+    --red-color: #EC4925;
+
+    /* лібре кольори */
+    --libre-yellow-color: #FFF6C2;
+    --libre-orange-color: #E4B050;
+    --libre-brown-color: #BD683C;
+    --libre-pink-color: #FFE1CF;
+
+    /* ноти парфумів (кольори) */
+    --white-flowers-color: #ECF3FF;
+    --citrus-color: #FFFC5A;
+    --lavender-color: #F0D8FF;
+    --vanilla-color: #FFEEDC;
+    --sweet-color: #FFBCE2;
+    --musk-color: #FFF2FF;
+    --ambergris-color: #DD885C;
+    --floral-color: #FFDFF1;
+    --fresh-color: #D8FAFF;
+    --honey-color: #FFD940;
+    --warm-spicy-color: #EC6825;
 
      /* Розміри */
     --base-font-size: 1rem;
@@ -67,14 +92,14 @@
 .container {
     padding-left: var(--mob-padding);
     padding-right: var(--mob-padding);
-    min-height: 100dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
+    min-height: 75dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
 }
 
 .container > .inside {  /* Direct child .inside in .container */
     margin: auto;       /* Центрування по-горизонталі */
     padding-top: var(--ver-padding);
     padding-bottom: var(--ver-padding);
-    max-width: var(--max-width);
+    /* max-width: var(--max-width); */
 }
 
 header.container > .inside {  
