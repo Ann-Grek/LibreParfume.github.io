@@ -49,7 +49,7 @@ background-color: var(--black-color);
 } */
 
 .showPassword-class {
-  max-width: 90px;
+  max-width: 16px;
   font-weight: 500;
   display: flex;
   flex-direction: row-reverse;
