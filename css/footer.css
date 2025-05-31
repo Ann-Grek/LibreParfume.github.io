@@ -50,6 +50,7 @@ background-color: var(--black-color);
 
 .showPassword-class {
   max-width: 80px;
+  font-weight: 500;
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
@@ -57,15 +58,15 @@ background-color: var(--black-color);
 }
 
 .signUp-form button[type = "submit"] {
-  max-width: 150px;
+  max-width: 120px;
   width: 100%;
-  padding: 16px 24px;
+  padding: 16px 16px;
   background-color: var(--black-color);
   border-color: var(--white-color);
   color: var(--white-color);
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 16px;
 }
 
