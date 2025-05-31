@@ -45,11 +45,11 @@ height: 100%;
 background-color: var(--black-color);
 }
 
-#showPassword {  
-}
+/* #showPassword {  
+} */
 
 .showPassword-class {
-  max-width: 80px;
+  max-width: 24px;
   font-weight: 500;
   display: flex;
   flex-direction: row-reverse;

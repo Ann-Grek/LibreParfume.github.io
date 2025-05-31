@@ -1,9 +1,9 @@
-.swiper-container {
+/* .swiper-container {
 }
 
 .swiper-wrapper .item {
     
-}
+} */
 
 .swiper-slide, .item {
     height:auto;
@@ -67,7 +67,7 @@ header .swiper-button-next:hover, header .swiper-button-prev:hover {
 
 @media screen and (max-width: 767px) {
 
-    .swiper-button-prev,
+    /* .swiper-button-prev,
     .swiper-button-next {
-    }
+    } */
 }
